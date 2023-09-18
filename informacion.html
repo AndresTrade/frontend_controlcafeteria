@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en, es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Lato:ital,wght@0,400;0,900;1,700&family=Righteous&family=Work+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <title>Bienvenido a ControlCafetería</title>
+    
+</head>
+<body>
+
+        <div class="menu">
+            <img src="LogoCoffee.png" alt="Logo Corporativo">
+            <ul>
+                <li><button onclick="window.location.href='ingreso.html';">Inicio</button></li>
+                <li><button onclick="window.location.href='informacion.html';">Sobre Nosotros</button></li>
+                <li><button id="btn-abrir-modal">Cargar Saldo</button></li>
+                <li><button id="btn-abrir-consumo">Consumo</button></li>
+                <li><button onclick="window.location.href='login.html';">Cerrar Sesión</button>
+            </ul>
+        </div>
+
+            <div class="contenido">
+                <div class="inicio" >
+                    <h1 class="titulo">¡Bienvenido a CoffeeTrack - Tu Control de Cafetería Escolar!</h1>
+                    <p>Esta idea surge de la necesidad de saber y conocer que consumen los niños en los colegios y tambien de tener un control
+                        sobre los alimentos que ellos ingieren ya que muchas veces se ha detectado que al momento de enviarles dinero para que
+                        ellos puedan disponer de el en las cateferias escolares, ellos pueden ser victimas de matoneo o de alguna circunstancia 
+                        afecte su consumo o su compra de alimentos. <br><br> Entonces con esta idea de espera que el control sea mayor y que entre todos
+                        podamos tambien hacer mas agil el consumo y la compra, viendose beneficiados tanto los padres de familia como los mismos
+                        operadores de las cafeterias, ya que ellos podran tener un mejor control y mas eficiencia en sus labores. </p>
+                    
+                    <p>Inicialmente, este proyecto está dirigido a plataformas web, pero ya se está migrando a tecnología de dispositivos
+                        Móviles para que sea escalable y el ciclo de vida del software sea sostenible. <br><br> Este también será el proyecto de 
+                        realización para obtener el título de Tecnólogo en Análisis y Desarrollo de Software otorgado por el SENA y se espera tener un
+                        resultado destacable para así demostrar el agradecimiento hacia los instructores.
+                    </p>
+                    
+                </div>
+            </div>
+
+                <section class="pagos" id="pagos">
+                    <div class="pagos_contein">
+                        <img class="imagen" src="Google pay.png" alt="pasarela">
+                        <h2 class="pagos_tittle">Este espacio es para la pasarela de pagos</h2>
+                        <form class="form">
+                            <input class="input" type="text" name="Código del estudiante" placeholder="Código del estudiante">
+                            <input class="input" type="number" name="Monto" placeholder="Monto a cargar">
+                            <input class="button" type="button" onclick="alert('La base de datos esta siendo actualizada')" value="Cargar">
+                            <input class="button" type="button" id="btn-cerrar-modal" value="Cancelar">
+                        </form>
+                    </div>
+                </section>
+
+                <section class="pagos" id="consumo">
+                    <div class="pagos_contein">
+                        <img class="imagen" src="icono foto.png" alt="foto estudiante">
+                        <h2 class="pagos_tittle">Este espacio es para visualizar el consumo del estudiante</h2>
+                            <form class="form" name="formulario">
+                                <input class="input" type="button" name="Saldo altual"value="Saldo actual">
+                                <input class="input" type="date" name="Fecha" placeholder="Ingrese fecha">
+                                <input class="button" type="button" onclick="alert('Estamos Trabajando para Resolverlo')" value="Ver Consumo">
+                                <input class="button" type="button" id="btn-cerrar-consumo" value="Cancelar">
+                            </form>
+                    </div>
+                </section>               
+
+            <footer>
+                <h2 class="fin">Esta es la estructura Front-End del sistema para versiones web.
+                    Se realizó en HTML, CSS y JavaScript. <br><br>Elaborado por Andres Vargas, ficha 2627108</h2>
+            </footer>
+
+            <script src="script.js"></script>
+        </body>
+        </html>

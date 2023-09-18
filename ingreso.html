@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en, es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Lato:ital,wght@0,400;0,900;1,700&family=Righteous&family=Work+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <title>Bienvenido a ControlCafetería</title>
+    
+</head>
+<body>
+
+        <div class="menu">
+            <img src="LogoCoffee.png" alt="Logo Corporativo">
+            <ul>
+                <li><button onclick="window.location.href='ingreso.html';">Inicio</button></li>
+                <li><button onclick="window.location.href='informacion.html';">Sobre Nosotros</button></li>
+                <li><button id="btn-abrir-modal">Cargar Saldo</button></li>
+                <li><button id="btn-abrir-consumo">Consumo</button></li>
+                <li><button onclick="window.location.href='login.html';">Cerrar Sesión</button>
+            </ul>
+        </div>
+
+            <div class="contenido">
+                <div class="inicio" >
+                    <h1 class="titulo">¡Bienvenido a CoffeeTrack - Tu Control de Cafetería Escolar!</h1>
+                    <p>Sabemos lo importante que es para los padres mantener un control adecuado de la alimentación y los gastos de sus hijos en la escuela.
+                       Es por eso que hemos creado esta aplicación pensando en ti.
+                    </p>
+                    <p>Con CoffeeTrack, tendrás la tranquilidad de saber que puedes:
+                    </p>
+                    <ul>
+                        <li><strong>Gestionar el Presupuesto:</strong> Establece un presupuesto semanal o mensual para las compras de tu hijo en la cafetería escolar. 
+                                    No más sorpresas en tus estados de cuenta.</li>
+                        <li><strong>Controlar las Compras:</strong> Accede a un registro detallado de las compras de tu hijo en la cafetería. 
+                                    Verás qué alimentos consumen y cuánto dinero se gasta en cada compra.</li>
+                        <li><strong>Fomentar una Alimentación Saludable:</strong> Supervisa la selección de alimentos de tus hijos y asegúrate de que estén haciendo elecciones nutritivas.</li>
+                        <li><strong>Comunicarte con la Cafetería:</strong> Mantente en contacto con el personal de la cafetería escolar para preguntas o preocupaciones sobre la alimentación de tus hijos.</li>
+                    </ul>
+                        <p>Estamos comprometidos en brindarte la mejor experiencia para que puedas tomar decisiones informadas sobre la alimentación y las finanzas de tus hijos mientras están en la escuela.
+                        </p>
+
+                        <p>¡Comienza hoy mismo a tomar el control con CoffeeTrack y garantiza un futuro saludable para tus hijos!
+                        </p>
+                </div>
+            </div>
+
+                <section class="pagos" id="pagos">
+                    <div class="pagos_contein">
+                        <img class="imagen" src="Google pay.png" alt="pasarela">
+                        <h2 class="pagos_tittle">Este espacio es para la pasarela de pagos</h2>
+                        <form class="form">
+                            <input class="input" type="text" name="Código del estudiante" placeholder="Código del estudiante">
+                            <input class="input" type="number" name="Monto" placeholder="Monto a cargar">
+                            <input class="button" type="button" onclick="alert('La base de datos esta siendo actualizada')" value="Cargar">
+                            <input class="button" type="button" id="btn-cerrar-modal" value="Cancelar">
+                        </form>
+                    </div>
+                </section>
+
+                <section class="pagos" id="consumo">
+                    <div class="pagos_contein">
+                        <img class="imagen" src="icono foto.png" alt="foto estudiante">
+                        <h2 class="pagos_tittle">Este espacio es para visualizar el consumo del estudiante</h2>
+                            <form class="form" name="formulario">
+                                <input class="input" type="button" name="Saldo altual"value="Saldo actual">
+                                <input class="input" type="date" name="Fecha" placeholder="Ingrese fecha">
+                                <input class="button" type="button" onclick="alert('Estamos Trabajando para Resolverlo')" value="Ver Consumo">
+                                <input class="button" type="button" id="btn-cerrar-consumo" value="Cancelar">
+                            </form>
+                    </div>
+                </section>               
+
+            <footer>
+                <h2 class="fin">Esta es la estructura Front-End del sistema para versiones web.
+                                Se realizó en HTML, CSS y JavaScript. <br><br>Elaborado por Andres Vargas, ficha 2627108</h2>
+            </footer>
+
+            <script src="script.js"></script>
+        </body>
+        </html>
